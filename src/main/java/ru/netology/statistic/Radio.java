@@ -7,14 +7,15 @@ public class Radio {
     public void next() {
         if (currentRadioStation != 9) {
             currentRadioStation++;
-        } else {
-            currentRadioStation = 0;
+            return;
         }
+        currentRadioStation = 0;
     }
 
     public void prev() {
         if (currentRadioStation != 0) {
-            currentRadioStation--;
+         currentRadioStation--;
+
         } else {
             currentRadioStation = 9;
         }
